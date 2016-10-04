@@ -20,4 +20,3 @@ RUN mv /tmp/stack-1.2.0-linux-x86_64-static/stack /usr/local/bin/stack
 
 # STACK
 WORKDIR /usr/local/src/ec2-split-objs-bug
-RUN /usr/local/bin/stack --jobs $(grep -c processor /proc/cpuinfo) install

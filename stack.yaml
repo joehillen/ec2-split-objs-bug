@@ -1,9 +1,6 @@
 resolver: lts-7.1
 packages:
 - '.'
-extra-deps: []
-flags: {}
-extra-package-dbs: []
 ghc-options: { '*': '-O2 -optc-Os -optl-static -fPIC -ddump-deriv' }
 build: { split-objs: true }
 rebuild-ghc-options: true
