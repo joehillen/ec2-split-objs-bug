@@ -1,6 +1,8 @@
-resolver: lts-7.1
+resolver: lts-7.16
 packages:
 - '.'
-ghc-options: { '*': '-O2 -optc-Os -optl-static -fPIC -ddump-deriv' }
+ghc-options: { '*': '-O2  -optc-Os -optl-static -fPIC -ddump-deriv' }
 build: { split-objs: true }
 rebuild-ghc-options: true
+system-ghc: true
+compiler-check: newer-minor
